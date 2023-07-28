@@ -15,7 +15,7 @@ def bare_hamiltonian(N, E_l, E_c, E_j, phi_ext):
     phi = (a+a.dag())*(8.0*E_c/E_l)**(0.25)/np.sqrt(2.0)
     na = 1.0j*(a.dag()-a)*(E_l/(8*E_c))**(0.25)/np.sqrt(2.0)
     ope = 1.0j*(phi - phi_ext)
-    H = 4.0*E_c*na**2.0 + 0.5*E_l*phi**2.0 - 0.5*E_j*(ope.expm() + (-ope).expm())
+    H = 4.0*E_c*na**2 + 0.5*E_l*phi**2 - 0.5*E_j*(ope.expm() + (-ope).expm())
     return H
 
 def coupled_hamiltonian(Na, E_l, E_c, E_j, phi_ext, Nr, wr, g):

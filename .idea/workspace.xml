@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,39 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change afterPath="$PROJECT_DIR$/../materials-mask/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../materials-mask/.idea/materials-mask.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../materials-mask/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../parametric-mask/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../parametric-mask/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../parametric-mask/.idea/parametric-mask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Devices/Measured samples/Junctions calculation.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_fluxonium.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_fluxonium.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_transmon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_transmon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0. Two-level system tutorial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/0a. Decoherence error.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0a. Decoherence error.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/0c. Two-level ac-Stack iSWAP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/0c. Two-level ac-Stack iSWAP.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/1a. Transmon coupling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/Single_small_junction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/Single_small_junction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2b. Biased-noise fluxonium single-qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2b. Biased-noise fluxonium single-qubit gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3. Fluxonium coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3a. Fluxonium direct coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3b. Multipath coupling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/3f. Biased noise fluxonium CZ gate.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/5. GKP qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/5. GKP qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/6. 0-pi qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/6. 0-pi qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/7. cos(2phi) qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/9. Flux qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/9. Flux qubit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/C. Metrology.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qtrl/qtrl/analysis/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/../qtrl/qtrl/analysis/plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qtrl/qtrl/benchmarking/cpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/../qtrl/qtrl/benchmarking/cpu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qtrl/qtrl/benchmarking/tomography.py" beforeDir="false" afterPath="$PROJECT_DIR$/../qtrl/qtrl/benchmarking/tomography.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +53,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1kXraD5gR6XomSyBMIVyYK0zLHJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -84,12 +64,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Fluxonium_hamiltonians" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Chuanhong/PycharmProjects/Fluxonium_berkeley&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/ThreeStepDoseTest" />
@@ -118,6 +106,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Quantum_optics/Bloch_sphere.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -139,6 +128,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Devices/Measured samples/Kerr_cat_v1/make_sample.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -160,6 +150,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_rotope.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -181,28 +172,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_transmon.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="spectrum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Fluxonium_v2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Fluxonium_v2/scripts_coupledQubits" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Fluxonium_v2/scripts_coupledQubits/spectrum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,7 +187,6 @@
         <item itemvalue="Python.qchard_rotope" />
         <item itemvalue="Python.make_sample (1)" />
         <item itemvalue="Python.qchard_transmon" />
-        <item itemvalue="Python.spectrum" />
         <item itemvalue="Python.Bloch_sphere" />
       </list>
     </recent_temporary>
@@ -229,6 +199,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605857838742</updated>
+      <workItem from="1684184001480" duration="2823000" />
+      <workItem from="1684253276818" duration="3397000" />
+      <workItem from="1684362313775" duration="594000" />
+      <workItem from="1685487499583" duration="899000" />
+      <workItem from="1687215756869" duration="235000" />
+      <workItem from="1690478354111" duration="7288000" />
     </task>
     <task id="LOCAL-00001" summary="update notebooks">
       <created>1607491922951</created>
@@ -436,6 +412,9 @@
     <option name="localTasksCounter" value="30" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -446,22 +425,10 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update notebooks" />
     <option name="LAST_COMMIT_MESSAGE" value="update notebooks" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1685" y="-103" key="Vcs.Push.Dialog.v2" timestamp="1644463853638">
-      <screen x="1152" y="-335" width="1920" height="979" />
-    </state>
-    <state x="1685" y="-103" key="Vcs.Push.Dialog.v2/-1920.-335.1920.1055/1152.-335.1920.979/0.25.1152.695@1152.-335.1920.979" timestamp="1644463853638" />
-    <state x="2933" y="592" key="Vcs.Push.Dialog.v2/3904.279.1920.977/2560.399.1344.815/0.25.2560.1415@2560.399.1344.815" timestamp="1635972857766" />
-    <state x="1918" y="72" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1644463842277">
-      <screen x="1152" y="-335" width="1920" height="979" />
-    </state>
-    <state x="1918" y="72" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-335.1920.1055/1152.-335.1920.979/0.25.1152.695@1152.-335.1920.979" timestamp="1644463842277" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
