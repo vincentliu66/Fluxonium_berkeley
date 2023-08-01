@@ -23,13 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update notebooks">
-      <change beforePath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fluxonium_berkeley.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notebooks_Liu/0.Fluxonium.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notebooks_Liu/0a.Fluxonium parameter sweep.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/Single_small_junction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/Single_small_junction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/Fluxonium parameter sweep.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -64,33 +64,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Chuanhong/PycharmProjects/Fluxonium_berkeley&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Chuanhong/PycharmProjects/Fluxonium_berkeley/Notebooks_Liu",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Chuanhong\PycharmProjects\Fluxonium_berkeley\Notebooks_Liu" />
+      <recent name="$PROJECT_DIR$/Fluxonium_hamiltonians" />
+      <recent name="$PROJECT_DIR$/Devices/Measured samples" />
+      <recent name="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/ThreeStepDoseTest/parameters" />
+      <recent name="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/ThreeStepDoseTest" />
       <recent name="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D" />
       <recent name="$PROJECT_DIR$/Devices/Tutorial/MQCV6" />
       <recent name="$PROJECT_DIR$/Devices/Measured samples" />
       <recent name="$PROJECT_DIR$/Devices/Tutorial" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Fluxonium_hamiltonians" />
-      <recent name="$PROJECT_DIR$/Devices/Measured samples" />
-      <recent name="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/ThreeStepDoseTest/parameters" />
-      <recent name="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters" />
     </key>
   </component>
   <component name="RunManager" selected="Python.qchard_rotope">
@@ -204,7 +205,8 @@
       <workItem from="1684362313775" duration="594000" />
       <workItem from="1685487499583" duration="899000" />
       <workItem from="1687215756869" duration="235000" />
-      <workItem from="1690478354111" duration="7288000" />
+      <workItem from="1690478354111" duration="11624000" />
+      <workItem from="1690588713278" duration="30477000" />
     </task>
     <task id="LOCAL-00001" summary="update notebooks">
       <created>1607491922951</created>
@@ -409,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644463831324</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="update notebooks">
+      <created>1690567724311</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1690567724311</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

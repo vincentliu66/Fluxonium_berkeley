@@ -4,10 +4,11 @@
 import numpy as np
 from qutip import *
 from scipy.special import kv
+from scipy.constants import *
 
 #Define constants
-e = 1.602e-19    #Fundamental charge
-h = 6.626e-34    #Placnk's constant
+# e = 1.602e-19    #Fundamental charge
+# h = 6.626e-34    #Planck's constant
 phi_o = h/(2*e) #Flux quantum
 
 def bare_hamiltonian(N, E_l, E_c, E_j, phi_ext):
@@ -24,7 +25,7 @@ def coupled_hamiltonian(Na, E_l, E_c, E_j, phi_ext, Nr, wr, g):
     phi = (a + a.dag()) * (8.0 * E_c / E_l) ** (0.25) / np.sqrt(2.0)
     na = 1.0j * (a.dag() - a) * (E_l / (8 * E_c)) ** (0.25) / np.sqrt(2.0)
     ope = 1.0j * (phi + phi_ext)
-    H_f = 4.0 * E_c * na ** 2.0 + 0.5 * E_l * phi ** 2.0 - 0.5 * E_j * (ope.expm() + (-ope).expm())
+    H_f = 4.0 * E_c * na ** 2 + 0.5 * E_l * phi ** 2 - 0.5 * E_j * (ope.expm() + (-ope).expm())
     H_r = wr*(b.dag()*b + 1.0/2)
     H_c = g*na*(b.dag() + b)
     H = H_f + H_r + H_c
@@ -35,7 +36,7 @@ def charge_matrix_element(N, E_l, E_c, E_j, phi_ext, iState, fState):
     phi = (a + a.dag()) * (8.0 * E_c / E_l) ** (0.25) / np.sqrt(2.0)
     na = 1.0j * (a.dag() - a) * (E_l / (8 * E_c)) ** (0.25) / np.sqrt(2.0)
     ope = 1.0j * (phi + phi_ext)
-    H = 4.0 * E_c * na ** 2.0 + 0.5 * E_l * phi ** 2.0 - 0.5 * E_j * (ope.expm() + (-ope).expm())
+    H = 4.0 * E_c * na ** 2 + 0.5 * E_l * phi ** 2 - 0.5 * E_j * (ope.expm() + (-ope).expm())
 
     eigen_energies, eigen_states = H.eigenstates()
     element = na.matrix_element(eigen_states[iState],eigen_states[fState])
@@ -47,7 +48,7 @@ def coupled_charge_matrix_element(N, E_l, E_c, E_j, phi_ext, iState, fState, Nr,
     phi = (a + a.dag()) * (8.0 * E_c / E_l) ** (0.25) / sqrt(2.0)
     na = 1.0j * (a.dag() - a) * (E_l / (8 * E_c)) ** (0.25) / sqrt(2.0)
     ope = 1.0j * (phi + phi_ext)
-    H_f = 4.0 * E_c * na ** 2.0 + 0.5 * E_l * phi ** 2.0 - 0.5 * E_j * (ope.expm() + (-ope).expm())
+    H_f = 4.0 * E_c * na ** 2 + 0.5 * E_l * phi ** 2 - 0.5 * E_j * (ope.expm() + (-ope).expm())
     H_r = wr * (b.dag() * b + 1.0 / 2)
     H_c = -g * na * (b.dag + b)
     H = H_f + H_r + H_c
@@ -61,10 +62,29 @@ def phase_matrix_element(N, E_l, E_c, E_j, phi_ext, iState, fState):
     phi = (a + a.dag()) * (8.0 * E_c / E_l) ** (0.25) / np.sqrt(2.0)
     na = 1.0j * (a.dag() - a) * (E_l / (8 * E_c)) ** (0.25) / np.sqrt(2.0)
     ope = 1.0j * (phi + phi_ext)
-    H = 4.0 * E_c * na ** 2.0 + 0.5 * E_l * phi ** 2.0 - 0.5 * E_j * (ope.expm() + (-ope).expm())
+    H = 4.0 * E_c * na ** 2 + 0.5 * E_l * phi ** 2 - 0.5 * E_j * (ope.expm() + (-ope).expm())
 
     eigen_energies, eigen_states = H.eigenstates()
     element = phi.matrix_element(eigen_states[iState],eigen_states[fState])
+    return element
+
+def phase_matrix_element_Liu(N, E_l, E_c, E_j, phi_ext, iState, fState):
+    a = tensor(destroy(N))
+    phi = (a + a.dag()) * (8.0 * E_c / E_l) ** (0.25) / np.sqrt(2.0)
+    na = 1.0j * (a.dag() - a) * (E_l / (8 * E_c)) ** (0.25) / np.sqrt(2.0)
+    ope = 1.0j * (phi + phi_ext)
+    H = 4.0 * E_c * na ** 2 + 0.5 * E_l * phi ** 2 - 0.5 * E_j * (ope.expm() + (-ope).expm())
+    eigen_energies, eigen_states = H.eigenstates()
+    element = phi.matrix_element(eigen_states[iState], eigen_states[fState])
+
+    print('destroy(N)=', destroy(N))
+    print('a=', a)
+    print('phi=', phi)
+    print('na=', na)
+    print('ope=', ope)
+    print('eigen_energies=', eigen_energies)
+    print('eigen_states=', eigen_states)
+
     return element
 
 def qp_matrix_element(N, E_l, E_c, E_j, phi_ext, iState, fState):
@@ -72,7 +92,7 @@ def qp_matrix_element(N, E_l, E_c, E_j, phi_ext, iState, fState):
     phi = (a + a.dag()) * (8.0 * E_c / E_l) ** (0.25) / np.sqrt(2.0)
     na = 1.0j * (a.dag() - a) * (E_l / (8.0 * E_c)) ** (0.25) / np.sqrt(2.0)
     ope = 1.0j * (phi + phi_ext)
-    H = 4.0 * E_c * na ** 2.0 + 0.5 * E_l * phi ** 2.0 - 0.5 * E_j * (ope.expm() + (-ope).expm())
+    H = 4.0 * E_c * na ** 2 + 0.5 * E_l * phi ** 2 - 0.5 * E_j * (ope.expm() + (-ope).expm())
 
     sine_ope = ((ope/2.0).expm() - (-ope/2.0).expm())/(2.0j)
     eigen_energies, eigen_states = H.eigenstates()
@@ -84,7 +104,7 @@ def charge_dispersive_shift(N, level_num, E_l, E_c, E_j, phi_ext, iState, fState
     phi = (a + a.dag()) * (8.0 * E_c / E_l) ** (0.25) / np.sqrt(2.0)
     na = 1.0j * (a.dag() - a) * (E_l / (8 * E_c)) ** (0.25) / np.sqrt(2.0)
     ope = 1.0j * (phi + phi_ext)
-    H = 4.0 * E_c * na ** 2.0 + 0.5 * E_l * phi ** 2.0 - 0.5 * E_j * (ope.expm() + (-ope).expm())
+    H = 4.0 * E_c * na ** 2 + 0.5 * E_l * phi ** 2 - 0.5 * E_j * (ope.expm() + (-ope).expm())
 
     #Eigenstates, eigenvectors
     eValues, eVectors = H.eigenstates()
@@ -113,7 +133,7 @@ def flux_dispersive_shift(N, level_num, E_l, E_c, E_j, phi_ext, iState, fState, 
     phi = (a + a.dag()) * (8.0 * E_c / E_l) ** (0.25) / np.sqrt(2.0)
     na = 1.0j * (a.dag() - a) * (E_l / (8 * E_c)) ** (0.25) / np.sqrt(2.0)
     ope = 1.0j * (phi + phi_ext)
-    H = 4.0 * E_c * na ** 2.0 + 0.5 * E_l * phi ** 2.0 - 0.5 * E_j * (ope.expm() + (-ope).expm())
+    H = 4.0 * E_c * na ** 2 + 0.5 * E_l * phi ** 2 - 0.5 * E_j * (ope.expm() + (-ope).expm())
 
     # Eigenstates, eigenvectors
     eValues, eVectors = H.eigenstates()
@@ -149,7 +169,7 @@ def relaxation_rate_cap(E_l, E_c, E_j, Q_cap, w, pem, T):
 
     cap = e ** 2 / (2.0 * E_c)
     ind = hbar ** 2 / (4.0 * e ** 2 * E_l)
-    gk = e ** 2.0 / h
+    gk = e ** 2 / h
     g = 8.0 * E_j * gk / delta_alum
 
     Y_cap = w * cap / Q_cap
@@ -211,7 +231,7 @@ def relaxation_rate_cap_Z(E_l, E_c, E_j, Q_cap, w, nem):
 
     cap = e ** 2 / (2.0 * E_c)
     ind = hbar ** 2 / (4.0 * e ** 2 * E_l)
-    gk = e ** 2.0 / h
+    gk = e ** 2 / h
     g = 8.0 * E_j * gk / delta_alum
 
     # Z_cap = Q_cap / (w * cap )
@@ -233,7 +253,7 @@ def relaxation_rate_ind(E_l, E_c, E_j, Q_ind, w, pem, T):
 
     cap = e ** 2 / (2.0 * E_c)
     ind = hbar ** 2 / (4.0 * e ** 2 * E_l)
-    gk = e ** 2.0 / h
+    gk = e ** 2 / h
     g = 8.0 * E_j * gk / delta_alum
 
     Y_ind = 1.0 / (w * ind * Q_ind)
@@ -252,13 +272,13 @@ def relaxation_rate_qp(E_l, E_c, E_j, Q_qp, w, qpem):
     E_j = E_j / 1.509190311677e+24  # convert to J
     delta_alum = 5.447400321e-23  # J
 
-    cap = e ** 2.0 / (2.0 * E_c)
+    cap = e ** 2 / (2.0 * E_c)
     ind = hbar ** 2 / (4.0 * e ** 2 * E_l)
-    gk = e ** 2.0 / h
+    gk = e ** 2 / h
     g = 8.0 * E_j * gk / delta_alum
 
     Y_qp = (g / (2.0 * Q_qp)) * (2.0 * delta_alum / (hbar * w)) ** (1.5)
-    gamma_qp = (qpem) ** 2.0 * w * Y_qp/(np.pi*gk)
+    gamma_qp = (qpem) ** 2 * w * Y_qp/(np.pi*gk)
     return gamma_qp
 
 def relaxation_rate_qp_finiteTemp(E_l, E_c, E_j, w, qpem, T):
@@ -272,10 +292,10 @@ def relaxation_rate_qp_finiteTemp(E_l, E_c, E_j, w, qpem, T):
     E_j = E_j * 2.0 * np.pi * 1e9 #2piHz
     delta_alum = 5.447400321e-23  # J
 
-    cap = e ** 2.0 / (2.0 * E_c)
+    cap = e ** 2 / (2.0 * E_c)
     ind = hbar ** 2 / (4.0 * e ** 2 * E_l)
     S=(16.0*E_j/np.pi)*np.exp(-delta_alum/(kB*T))*np.exp(hbar*w/(2*kB*T))*0.5*(1.0/np.tanh(hbar*w/(2*kB*T))+1)*kv(0,hbar*abs(w)/(2*kB*T))
-    gamma_qp = (qpem) ** 2.0 * S
+    gamma_qp = (qpem) ** 2 * S
     return gamma_qp
 
 def relaxation_rate_qp_array(E_l, E_c, E_j, Q_qp, w, pem):
@@ -285,14 +305,27 @@ def relaxation_rate_qp_array(E_l, E_c, E_j, Q_qp, w, pem):
     E_c = E_c / 1.509190311677e+24  # convert GHz to J
     E_l = E_l / 1.509190311677e+24  # convert to J
     E_j = E_j / 1.509190311677e+24  # convert to J
-    delta_alum = 5.447400321e-23  # J
+    delta_alum = 5.447400321e-23  # J. this should be 2 delta_, this is wrong
 
-    gk = e ** 2.0 / h
+    gk = e ** 2 / h
     g = 8.0 * E_l * gk / delta_alum
 
     Y_qp = (g / (2.0 * Q_qp)) * (2.0 * delta_alum / (hbar * w)) ** (1.5)
-    gamma_qp_array = (pem/2.0) ** 2.0 * w * Y_qp / (np.pi * gk)
+    gamma_qp_array = (pem/2.0) ** 2 * w * Y_qp / (np.pi * gk)
     return gamma_qp_array
+
+def relaxation_rate_qp_01(E_l, E_c, x_qp, w):
+    # By CHLiu, this is to reproduce the equation A2 in Long's PRXQ paper
+    # (8E_{C}E_{L})^{1/2} \frac{x_{\rm qp}}{\pi \hbar}\sqrt{\frac{2\Delta}{\hbar\omega_{01}}}
+    # you cannot just use the matrix element like this, since they are not the same basis
+    w = w * 2.0 * pi * 1e9
+    E_c = h * (E_c * 1e9)    # convert GHz, then  to J
+    E_l = h * (E_l * 1e9)    # convert GHz, then  to J
+    delta_Al = 170e-6 * e   # 170ueV
+
+    gamma_qp_01 = (8*E_c*E_l) ** 0.5 * (x_qp / (pi * hbar)) * (2.0 * delta_Al/(hbar * w))
+    return gamma_qp_01
+
 
 def relaxation_rate_qp_array_finiteTemp(E_l, E_c, E_j, w, pem, T):
     # Convert to appropriate parameters
@@ -308,7 +341,7 @@ def relaxation_rate_qp_array_finiteTemp(E_l, E_c, E_j, w, pem, T):
     S = (16.0 * E_l / np.pi) * np.exp(-delta_alum / (kB * T)) * np.exp(hbar * w / (2 * kB * T)) * 0.5 * (
     1.0 / np.tanh(hbar * w / (2 * kB * T)) + 1) * kv(0, hbar * abs(w) / (2 * kB * T))
 
-    gamma_qp_array = (pem / 2.0) ** 2.0 * S
+    gamma_qp_array = (pem / 2.0) ** 2 * S
     return gamma_qp_array
 
 def relaxation_rate_purcell(E_l, E_c, E_j, w, pem, resonator_freq, resonator_inductance):
