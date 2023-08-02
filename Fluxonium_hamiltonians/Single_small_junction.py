@@ -305,7 +305,7 @@ def relaxation_rate_qp_array(E_l, E_c, E_j, Q_qp, w, pem):
     E_c = E_c / 1.509190311677e+24  # convert GHz to J
     E_l = E_l / 1.509190311677e+24  # convert to J
     E_j = E_j / 1.509190311677e+24  # convert to J
-    delta_alum = 5.447400321e-23  # J. this should be 2 delta_, this is wrong
+    delta_alum = 5.447400321e-23  # J. this is actually 2 delta_alum, this is wrong
 
     gk = e ** 2 / h
     g = 8.0 * E_l * gk / delta_alum
@@ -314,7 +314,7 @@ def relaxation_rate_qp_array(E_l, E_c, E_j, Q_qp, w, pem):
     gamma_qp_array = (pem/2.0) ** 2 * w * Y_qp / (np.pi * gk)
     return gamma_qp_array
 
-def relaxation_rate_qp_01(E_l, E_c, x_qp, w):
+def relaxation_rate_qp_01_wrong(E_l, E_c, x_qp, w):
     # By CHLiu, this is to reproduce the equation A2 in Long's PRXQ paper
     # (8E_{C}E_{L})^{1/2} \frac{x_{\rm qp}}{\pi \hbar}\sqrt{\frac{2\Delta}{\hbar\omega_{01}}}
     # you cannot just use the matrix element like this, since they are not the same basis
@@ -324,6 +324,16 @@ def relaxation_rate_qp_01(E_l, E_c, x_qp, w):
     delta_Al = 170e-6 * e   # 170ueV
 
     gamma_qp_01 = (8*E_c*E_l) ** 0.5 * (x_qp / (pi * hbar)) * (2.0 * delta_Al/(hbar * w))
+    return gamma_qp_01
+
+def relaxation_rate_qp_01(E_l, E_c, E_j, x_qp, w, pem):
+    # this is to reproduce the equation A2 in Long's PRXQ paper
+    w = w * 2.0 * pi * 1e9
+    E_c = h * (E_c * 1e9)    # convert GHz, then  to J
+    E_l = h * (E_l * 1e9)    # convert GHz, then  to J
+    delta_Al = 170e-6 * e   # 170ueV
+
+    gamma_qp_01 = (pem/2.0) ** 2 * ((8*E_l) / (pi * hbar)) * x_qp * (2.0 * delta_Al/(hbar * w)) ** 0.5
     return gamma_qp_01
 
 
