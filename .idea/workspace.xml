@@ -23,12 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update coherence and QP study">
-      <change afterPath="$PROJECT_DIR$/Notebooks_Liu/Fluxonium_helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/Single_small_junction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/Single_small_junction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2. Fluxonium qubit.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks_Liu/0.Fluxonium.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks_Liu/0.Fluxonium.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks_Liu/0a.Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks_Liu/0a.Fluxonium parameter sweep.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks_Liu/Fluxonium_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks_Liu/Fluxonium_helper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +50,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="159d5476-10e2-473d-8285-62585c5b49c6" />
+        <option name="url" value="https://github.com/vincentliu66/Fluxonium_berkeley.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -207,7 +218,7 @@
       <workItem from="1687215756869" duration="235000" />
       <workItem from="1690478354111" duration="11624000" />
       <workItem from="1690588713278" duration="30585000" />
-      <workItem from="1690906629300" duration="13015000" />
+      <workItem from="1690906629300" duration="30232000" />
     </task>
     <task id="LOCAL-00001" summary="update notebooks">
       <created>1607491922951</created>
@@ -426,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690859181112</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update coherence and QP study">
+      <created>1690935073987</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1690935073987</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
