@@ -50,6 +50,13 @@ class CoupledObjects(object):
     >>> qubit = fluxonium.Fluxonium(E_L, E_C, E_J)
     >>> system = coupobj.CoupledObjects(resonator, qubit,
     ...                                 [resonator, qubit, g, 'JC-charge'])
+
+    A microwave resonator coupled to a qubit with g*(a + a^+)*phi interaciton.  # CHLiu
+
+    >>> resonator = resonator = cavity.Cavity(omega=omega_c, nlev=nlev_cav)
+    >>> qubit = fluxonium.Fluxonium(E_L, E_C, E_J)
+    >>> system = coupobj.CoupledObjects(resonator, qubit,
+    ...                                 [resonator, qubit, g, 'JC-flux'])
     """
 
     def __init__(self, *args):
@@ -175,6 +182,17 @@ class CoupledObjects(object):
                         op2 = obj2.a() + obj2.adag()
                     op1 = self.promote_op(obj1, op1)
                     op2 = self.promote_op(obj2, op2)
+                elif coupling_term[3] == 'JC-flux': # CHLiu
+                    # Qubit-resonator coupling via flux.
+                    if obj1.type == 'cavity':
+                        op1 = obj1.a() + obj1.adag()
+                        op2 = obj2.phi()
+                    else:
+                        op1 = obj1.phi()
+                        op2 = obj2.a() + obj2.adag()
+                    op1 = self.promote_op(obj1, op1)
+                    op2 = self.promote_op(obj2, op2)
+
                 elif coupling_term[3] == 'JC-rwa':
                     # Qubit-resonator coupling in the RWA.
                     op1 = self.promote_op(obj1, obj1.a())

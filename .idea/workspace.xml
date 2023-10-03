@@ -23,15 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update coherence and QP study">
+      <change afterPath="$PROJECT_DIR$/Notebooks_Liu/2c. Fluxonium-resonator.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_coupobj.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_coupobj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2c. Fluxonium-resonator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2c. Fluxonium-resonator.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks_Liu/0.Fluxonium.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks_Liu/0.Fluxonium.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks_Liu/0a.Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks_Liu/0a.Fluxonium parameter sweep.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks_Liu/Fluxonium_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks_Liu/Fluxonium_helper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,6 +44,17 @@
         <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -51,11 +67,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -218,7 +234,12 @@
       <workItem from="1687215756869" duration="235000" />
       <workItem from="1690478354111" duration="11624000" />
       <workItem from="1690588713278" duration="30585000" />
-      <workItem from="1690906629300" duration="30232000" />
+      <workItem from="1690906629300" duration="31614000" />
+      <workItem from="1692227784741" duration="2874000" />
+      <workItem from="1693001073269" duration="1536000" />
+      <workItem from="1693331410029" duration="26000" />
+      <workItem from="1695141483970" duration="16997000" />
+      <workItem from="1695840862732" duration="3148000" />
     </task>
     <task id="LOCAL-00001" summary="update notebooks">
       <created>1607491922951</created>
@@ -444,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690935073987</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update coherence and QP study">
+      <created>1691166729330</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1691166729330</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
