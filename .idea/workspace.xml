@@ -23,12 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ff63ec-a1e0-429d-9e24-b0dc4dd7839f" name="Default Changelist" comment="update coherence and QP study">
-      <change afterPath="$PROJECT_DIR$/Notebooks_Liu/2c. Fluxonium-resonator.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notebooks_Liu/2a High coherence fluxonium single qubit gate.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notebooks_Liu/xa.Fluxonium_flux_bias_purcell_loss.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scqubit/Fluxonium.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scqubit/GUI_Test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_coupobj.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fluxonium_hamiltonians/qchard_coupobj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/2c. Fluxonium-resonator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2c. Fluxonium-resonator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/2a. High coherence fluxonium single qubit gate.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks_Liu/0.Fluxonium.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks_Liu/0.Fluxonium.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks_Liu/0a.Fluxonium parameter sweep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks_Liu/0a.Fluxonium parameter sweep.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -83,6 +85,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="1kXraD5gR6XomSyBMIVyYK0zLHJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -93,15 +98,17 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Chuanhong/PycharmProjects/Fluxonium_berkeley/Notebooks_Liu&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -114,11 +121,11 @@
       <recent name="$PROJECT_DIR$/Devices/Tutorial/MQCV6/parameters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\QEDLiu\PycharmProjects\Fluxonium_berkeley\scqubit" />
       <recent name="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D/ThreeStepDoseTest" />
       <recent name="$PROJECT_DIR$/Devices/Measured samples/Fluxonium_3D" />
       <recent name="$PROJECT_DIR$/Devices/Tutorial/MQCV6" />
       <recent name="$PROJECT_DIR$/Devices/Measured samples" />
-      <recent name="$PROJECT_DIR$/Devices/Tutorial" />
     </key>
   </component>
   <component name="RunManager" selected="Python.qchard_rotope">
@@ -240,6 +247,11 @@
       <workItem from="1693331410029" duration="26000" />
       <workItem from="1695141483970" duration="16997000" />
       <workItem from="1695840862732" duration="3148000" />
+      <workItem from="1697069582463" duration="29086000" />
+      <workItem from="1702063839795" duration="639000" />
+      <workItem from="1702405787400" duration="592000" />
+      <workItem from="1702500932406" duration="1189000" />
+      <workItem from="1708982533054" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary="update notebooks">
       <created>1607491922951</created>
